@@ -1,0 +1,3 @@
+[submodule "whisperfly"]
+	path = whisperfly
+	url = git@github.com:FlyMyAI/whisperfly.git
