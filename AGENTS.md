@@ -34,6 +34,6 @@ Fire-and-forget from the client's hot path: never block local UX on the cloud ro
 ## Quality bars (from PLAYBOOK.md, enforced)
 
 - **README format**: first line "We killed <incumbent>."; one sentence "built from one prompt, Claude as the builder, FlyMy.AI agentic cloud as the backend"; Safe + Cheap bullets (literally-true privacy wording; X-times from OUR bill); <=6-line ASCII schema with prices on arrows; "Build it yourself" in 3 steps; `BUILD_PROMPT.md` is required.
-- **App UX**: opens ready to use; advanced settings hidden in UI (never delete code paths); the FlyMy.AI section front-and-center with the agent id prefilled and a connect link to `https://app.flymy.ai/mcp-configs`.
+- **App UX**: opens ready to use; advanced settings hidden in UI (never delete code paths); the FlyMy.AI section front-and-center with a link to the PUBLIC agent share page + an agent-id field with explicit "clone it to your account, paste your copy's id" copy (agents are per-account; never prefill the author's uuid), and a connect link to `https://app.flymy.ai/mcp-configs`.
 - **Self-test before handoff**: agent E2E verified (side effect checked, price pulled), app built + launched + exercised. The human clicks through a working product; they never debug it.
 - English-only code and docs, `-` not em-dash, secret-scan before push, MIT + attribution for forks.

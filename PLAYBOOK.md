@@ -31,7 +31,7 @@ No long paragraphs above the fold. If a newcomer can't rebuild the demo from the
 ## 3b. The app UX bar ("запустили и погнали")
 
 - The shipped app opens ready to use: minimal visible settings, everything advanced hidden (hide in UI, do NOT delete code paths - keeps it testable and diff-small vs upstream).
-- The FlyMy.AI section is front and center: enable toggle, API key field, agent id field **prefilled with our public agent**, plus a "Connect Notion" (or the demo's sink) button linking to app.flymy.ai/mcp-configs - so the path is: install -> paste key -> go.
+- The FlyMy.AI section is front and center: enable toggle, API key field, a "get the agent" button linking to the PUBLIC agent share page (app.flymy.ai/agents/chat/<execution_id> of a verified public run), and an agent-id field for the user's own copy. **Agents are per-account**: the UI must SAY "clone the public agent to your account, then paste your copy's id" - never prefill the author's uuid (it 403s on other keys). Plus a "Connect Notion" (or the demo's sink) button to app.flymy.ai/mcp-configs. Path: install -> paste key -> clone agent -> paste id -> go.
 - A user can paste THEIR OWN agent id right in the app to repoint it.
 
 ## 4. The self-test bar (hand over working things only)
