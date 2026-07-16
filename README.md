@@ -12,7 +12,7 @@ flowchart LR
     subgraph CLOUD["☁️ FlyMy.AI agentic cloud"]
         direction TB
         M["🎨 models · 🤖 agents · 🔌 100+ tools"]
-        A["agents that provision,<br/>run &amp; watch it 24/7"]
+        A["agents that provision,<br/>run and watch it 24/7"]
     end
     CLOUD --> OUT(["📦 a real product<br/>on <b>your</b> accounts, billed to you"])
 
