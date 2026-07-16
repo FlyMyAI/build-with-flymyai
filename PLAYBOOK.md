@@ -34,6 +34,16 @@ No long paragraphs above the fold. If a newcomer can't rebuild the demo from the
 - The FlyMy.AI section is front and center: enable toggle, API key field, a "get the agent" button linking to the PUBLIC agent share page (app.flymy.ai/agents/chat/<execution_id> of a verified public run), and an agent-id field for the user's own copy. **Agents are per-account**: the UI must SAY "clone the public agent to your account, then paste your copy's id" - never prefill the author's uuid (it 403s on other keys). Plus a "Connect Notion" (or the demo's sink) button to app.flymy.ai/mcp-configs. Path: install -> paste key -> clone agent -> paste id -> go.
 - A user can paste THEIR OWN agent id right in the app to repoint it.
 
+## 3c. Cloud-first, no local downloads at install
+
+- **The FlyMy.AI agent IS the product's engine.** Default mode: the app records/captures, the cloud agent does the heavy lifting (transcription, cleanup, filing to the sink) - the app itself talks ONLY to FlyMy.AI, never to third-party APIs directly (the agent owns the Notion/Slack/... credentials and calls).
+- **No model/asset downloads during install.** Onboarding = permissions + FlyMy.AI setup (API key, clone-the-agent), nothing else. Local/offline engines stay available as an advanced opt-in, never as a first-run requirement.
+- State the latency honestly in the UI/README (a frozen agent run is ~40-60s today).
+
+## 3d. Full visible rebrand of forks
+
+Every USER-VISIBLE surface carries the demo's brand: app name, window titles, logos/wordmarks, tray/menubar icons and tooltips, onboarding screens, all i18n strings across locales. Upstream credit lives in the About screen and NOTICE.md - not in the UI chrome. Internal identifiers (binary names, file prefixes, code module names) may keep upstream names to minimize the diff.
+
 ## 4. The self-test bar (hand over working things only)
 
 Before anything reaches a human for testing:
