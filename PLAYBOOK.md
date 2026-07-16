@@ -51,6 +51,10 @@ Every USER-VISIBLE surface carries the demo's brand: app name, window titles, lo
 - Finish = validate against the live API before saving; always offer "Skip for now".
 - Author's own credentials may exist only in the author's local settings store, never in the repo or the bundle (secret-scan the dmg too).
 
+## 3f. One public agent id, for everyone
+
+The user enters ONE identifier: the public agent id or its flymy.ai URL - identical for every user. Never teach "clone it and paste your copy's id" as UX. Backend contract that makes it true: running a PUBLIC agent's uuid with a foreign API key auto-clones it to the caller's account on first use (find-or-create) and runs the copy transparently. Consequently, public template agents must not bake account-specific resource ids - prompts find-or-create their resources by name (e.g. the "Voice Notes" Notion database), so any copy works on any account.
+
 ## 4. The self-test bar (hand over working things only)
 
 Before anything reaches a human for testing:
