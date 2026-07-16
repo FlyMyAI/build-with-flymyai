@@ -28,4 +28,4 @@ Prereq: FlyMy.AI MCP connected (`claude mcp add --transport http flymyai https:/
 
 ## Cost sanity table (why measuring matters)
 
-Observed on WhisperFly: provider list prices suggested ~$0.005/note; the real bill was $0.256 naive -> $0.083 after optimization (cheap model, no sandbox steps, plain-text tools). Never publish the floor as the price.
+Observed on WhisperFly: provider list prices suggested ~$0.005/note; the real bill was $0.256 naive -> $0.083 (o4-mini) -> $0.031 (gpt-4.1-mini) after optimization (cheaper non-reasoning model, fewer tool calls, literal JSON template). Never publish the floor as the price.
