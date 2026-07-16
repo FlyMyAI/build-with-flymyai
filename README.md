@@ -2,7 +2,9 @@
 
 Real apps built with **Claude Code as the brain** and **[FlyMy.AI](https://flymy.ai) as the cloud runtime** - each one documented end-to-end: the code, the cloud-agent recipe, and an honest BUILD_LOG with timestamps and real billed costs (including every bug we hit on the way).
 
-Every demo lives in its own repo, so you clone only what you want to play with. This hub is the index (submodules point at the latest state of each demo).
+**The pitch: the feature you rent for $15/mo is a commodity you can own.** Each demo takes an incumbent's core feature, rebuilds it as your-keys/your-data on FlyMy.AI, and publishes the receipts.
+
+Every demo lives in its own repo, so you clone only what you want to play with. This hub is the index (submodules point at the latest state of each demo). Building or contributing one? Read [PLAYBOOK.md](PLAYBOOK.md) - the standing rules for builds, marketing claims, and repo mechanics.
 
 | Demo | What it does | Stack | Cost per use (measured) |
 |---|---|---|---|
