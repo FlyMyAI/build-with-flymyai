@@ -44,6 +44,13 @@ No long paragraphs above the fold. If a newcomer can't rebuild the demo from the
 
 Every USER-VISIBLE surface carries the demo's brand: app name, window titles, logos/wordmarks, tray/menubar icons and tooltips, onboarding screens, all i18n strings across locales. Upstream credit lives in the About screen and NOTICE.md - not in the UI chrome. Internal identifiers (binary names, file prefixes, code module names) may keep upstream names to minimize the diff.
 
+## 3e. Guided first-run, zero baked credentials
+
+- The shipped app contains NO keys, agent ids, or accounts of the author. Ever.
+- First launch = a step-by-step wizard: (1) "get your API key here" button -> paste field with validation (wrong format = inline error, not a silent 404 later); (2) "clone the public agent here" button -> paste field that accepts WHATEVER the user grabs (agent uuid, chat-link id, or the full URL) and auto-resolves it via the API. Users paste the chat id from the share URL - we did too; the app must just handle it.
+- Finish = validate against the live API before saving; always offer "Skip for now".
+- Author's own credentials may exist only in the author's local settings store, never in the repo or the bundle (secret-scan the dmg too).
+
 ## 4. The self-test bar (hand over working things only)
 
 Before anything reaches a human for testing:
