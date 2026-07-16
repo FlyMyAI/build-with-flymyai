@@ -17,7 +17,16 @@ These are the standing rules. Every new demo repo follows them; PRs that break t
 - **Privacy claims must be literally true.** "No telemetry, no account, local by default, cloud is opt-in with your own keys" — yes. "Never stores anything" — no (local history exists, under user control).
 - **Name-check before naming.** Trademark + product-collision sweep before any public name (we've been burned: see WhisperFly's BUILD_LOG naming saga).
 
-## 3. Repo mechanics
+## 3. DIY-first README (the flymy.ai/mcp style)
+
+Every demo README opens, in this order, before anything else:
+1. **The price difference table** - incumbent's subscription vs our measured numbers, first screen.
+2. **"Build this yourself - 3 steps"**: (a) connect the FlyMy.AI MCP to Claude Code / claude.ai / Codex / Antigravity in ONE line (`claude mcp add --transport http flymyai https://mcp-agents.flymy.ai/mcp`), (b) paste ONE prompt from the repo's `BUILD_PROMPT.md` (two variants: reproduce-this-app ~5 min, and build-from-scratch), (c) use it.
+3. **A dead-simple schema** - one ASCII diagram, max ~6 lines, local vs cloud path with the price on each arrow.
+
+`BUILD_PROMPT.md` is a required file in every demo repo. If a newcomer can't rebuild the demo from the README top screen alone, the README fails review.
+
+## 4. Repo mechanics
 
 - Hub (`built-with-flymyai`) = index + submodules; each demo = its own repo (clone one without pulling all).
 - Per-demo layout: `README.md` (marketing + quick start), `CLAUDE.md` (for people adapting via Claude), `agent/`, `app/` or `client/`, `BUILD_LOG.md`, MIT `LICENSE`, `NOTICE.md` when forking.
