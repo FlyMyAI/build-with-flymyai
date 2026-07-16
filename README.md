@@ -23,10 +23,10 @@ flowchart LR
     class U you; class C brain; class M,A cloud; class OUT out;
 ```
 
-| Demo | Kills | Their price | Our price |
-|---|---|---|---|
-| [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Wispr Flow (hotkey dictation) | $12-15/mo | $0.031/note all-in (STT+cleanup+tags+Notion) |
-| [replifly](https://github.com/FlyMyAI/replifly) 🚀 | Replit (deploy-to-prod) | $25/mo + fees | pay-per-use on your own Fly.io/Neon/Sentry |
+| Demo | Kills | Their price | Our price | Savings |
+|---|---|---|---|---|
+| [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Wispr Flow (hotkey dictation) | $12-15/mo | dictation **$0** + $0.031/note to Notion | **5-16x cheaper** (core feature free) |
+| [replifly](https://github.com/FlyMyAI/replifly) 🚀 | Replit (deploy-to-prod) | $25-45/mo + metered Agent ($30-50+/app) | ~$2-5/mo on your own Fly+Neon+Sentry | **4-10x cheaper to run** + flat-rate coding |
 
 ## Build your own, from one prompt
 
