@@ -17,14 +17,22 @@ These are the standing rules. Every new demo repo follows them; PRs that break t
 - **Privacy claims must be literally true.** "No telemetry, no account, local by default, cloud is opt-in with your own keys" — yes. "Never stores anything" — no (local history exists, under user control).
 - **Name-check before naming.** Trademark + product-collision sweep before any public name (we've been burned: see WhisperFly's BUILD_LOG naming saga).
 
-## 3. DIY-first README (the flymy.ai/mcp style)
+## 3. The README format (same everywhere, killer-pitch style)
 
-Every demo README opens, in this order, before anything else:
-1. **The price difference table** - incumbent's subscription vs our measured numbers, first screen.
-2. **"Build this yourself - 3 steps"**: (a) connect the FlyMy.AI MCP to Claude Code / claude.ai / Codex / Antigravity in ONE line (`claude mcp add --transport http flymyai https://mcp-agents.flymy.ai/mcp`), (b) paste ONE prompt from the repo's `BUILD_PROMPT.md` (two variants: reproduce-this-app ~5 min, and build-from-scratch), (c) use it.
-3. **A dead-simple schema** - one ASCII diagram, max ~6 lines, local vs cloud path with the price on each arrow.
+Short. Punchy. In this exact order, all on the first screen:
+1. **"We killed <incumbent>."** - first line, verbatim. Then one sentence: built from **one prompt**, Claude as the builder, **FlyMy.AI cloud** as the backend.
+2. **Two bullets: Safe + Cheap.** Safe = local-first / no data leaves the machine without opt-in / no account, no telemetry (literally true wording only). Cheap = the X-times-cheaper line computed from OUR bill, with the core feature at $0 when it is.
+3. **"How we did it"** - one ASCII schema, max ~6 lines, local vs cloud path with the price on each arrow. One sentence: open-source app + one frozen FlyMy.AI agent, that's the whole product.
+4. **"Build it yourself"** - 3 plain-language steps: (a) one-line MCP connect (`claude mcp add --transport http flymyai https://mcp-agents.flymy.ai/mcp`; claude.ai / Codex / Antigravity: same URL), (b) paste ONE prompt from the required `BUILD_PROMPT.md`, (c) use it.
+5. Then and only then: numbers table, honest quality paragraph, links to BUILD_LOG / CLAUDE.md.
 
-`BUILD_PROMPT.md` is a required file in every demo repo. If a newcomer can't rebuild the demo from the README top screen alone, the README fails review.
+No long paragraphs above the fold. If a newcomer can't rebuild the demo from the top screen alone, the README fails review.
+
+## 3b. The app UX bar ("запустили и погнали")
+
+- The shipped app opens ready to use: minimal visible settings, everything advanced hidden (hide in UI, do NOT delete code paths - keeps it testable and diff-small vs upstream).
+- The FlyMy.AI section is front and center: enable toggle, API key field, agent id field **prefilled with our public agent**, plus a "Connect Notion" (or the demo's sink) button linking to app.flymy.ai/mcp-configs - so the path is: install -> paste key -> go.
+- A user can paste THEIR OWN agent id right in the app to repoint it.
 
 ## 4. Repo mechanics
 
