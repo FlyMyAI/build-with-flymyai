@@ -1,32 +1,31 @@
-# Built with FlyMy.AI 🛠️
+# Build with FlyMy.AI 🛠️
 
-Real apps built with **Claude Code as the brain** and **[FlyMy.AI](https://flymy.ai) as the cloud runtime** - each one documented end-to-end: the code, the cloud-agent recipe, and an honest BUILD_LOG with timestamps and real billed costs (including every bug we hit on the way).
+**We kill $15/mo subscriptions.** Each demo here is a real app built from **one prompt** - Claude as the builder, **[FlyMy.AI](https://flymy.ai) agentic cloud** as the backend - with the receipts published: code, agent recipe, and a BUILD_LOG with our real bill.
 
-**The pitch: the feature you rent for $15/mo is a commodity you can own.** Each demo takes an incumbent's core feature, rebuilds it as your-keys/your-data on FlyMy.AI, and publishes the receipts.
+**First kill: [Wispr Flow](https://github.com/FlyMyAI/whisperfly)** - their price: **$12-15/mo forever**. Ours: **dictation $0** (local, offline) + **$0.083 per voice note filed to Notion** (a feature they don't have). 3-18x cheaper, core feature free.
 
-Every demo lives in its own repo, so you clone only what you want to play with. This hub is the index (submodules point at the latest state of each demo). Building or contributing one? Read [PLAYBOOK.md](PLAYBOOK.md) - the standing rules for builds, marketing claims, and repo mechanics.
-
-| Demo | What it does | Stack | Cost per use (measured) |
+| Demo | Kills | Their price | Our price |
 |---|---|---|---|
-| [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Hotkey dictation app for macOS: instant local ASR paste + a cloud agent that transcribes, cleans, tags and files every voice note into Notion | Tauri/Rust (Handy fork) + FlyMyAI agent (whisper + notion, o4-mini) | ~$0.08 / voice note |
+| [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Wispr Flow (hotkey dictation) | $12-15/mo | $0 dictation + $0.083/note to Notion |
 
-## The pattern
+## Build your own, from one prompt
 
-Each demo follows the same recipe you can reuse:
+1. Connect FlyMy.AI to your coding agent (Claude Code / claude.ai / Codex / Antigravity) - one line:
+   ```bash
+   claude mcp add --transport http flymyai https://mcp-agents.flymy.ai/mcp
+   ```
+2. Grab [AGENTS.md](AGENTS.md) into your project (Claude also reads it via CLAUDE.md) - it teaches your agent the whole pattern: research -> one frozen FlyMy.AI agent -> thin open-source client -> honest BUILD_LOG.
+3. Say what to kill. Or start from a demo's `BUILD_PROMPT.md` and adapt.
 
-1. **Research with Claude** - competitor teardown, feasibility, unit economics (multi-agent workflows).
-2. **Cloud half on FlyMy.AI** - one agent, tools pinned, concrete ids baked into the prompt, then **frozen** into a fixed pipeline (cheap, fast, API-callable).
-3. **Local half** - the thinnest possible client (CLI first, then a real app, often a fork of a good MIT open-source base).
-4. **BUILD_LOG.md** - timestamps, real billed prices, dead ends included. That's the part most repos hide; we think it's the useful part.
+Skills for Claude Code live in [`skills/`](skills/) - drop them into `~/.claude/skills/` and your Claude knows how to build and bill-check FlyMy.AI agents.
 
-## Clone one demo
+## Rules of the series
+
+[PLAYBOOK.md](PLAYBOOK.md): the build pattern, the killer-pitch README format, honest-claims discipline (only numbers from our own bill), the app UX bar ("launch and go"), and the self-test bar (a human only ever receives a working, click-through-ready app).
+
+## Clone
 
 ```bash
-git clone git@github.com:FlyMyAI/whisperfly.git
-```
-
-## Clone everything
-
-```bash
-git clone --recursive git@github.com:FlyMyAI/built-with-flymyai.git
+git clone git@github.com:FlyMyAI/whisperfly.git                     # one demo
+git clone --recursive git@github.com:FlyMyAI/build-with-flymyai.git # everything
 ```

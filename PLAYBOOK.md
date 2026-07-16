@@ -34,9 +34,16 @@ No long paragraphs above the fold. If a newcomer can't rebuild the demo from the
 - The FlyMy.AI section is front and center: enable toggle, API key field, agent id field **prefilled with our public agent**, plus a "Connect Notion" (or the demo's sink) button linking to app.flymy.ai/mcp-configs - so the path is: install -> paste key -> go.
 - A user can paste THEIR OWN agent id right in the app to repoint it.
 
-## 4. Repo mechanics
+## 4. The self-test bar (hand over working things only)
 
-- Hub (`built-with-flymyai`) = index + submodules; each demo = its own repo (clone one without pulling all).
+Before anything reaches a human for testing:
+- The cloud agent is self-tested END-TO-END on the frozen compilation: run it, verify the real side effect (the Notion row / message / file actually exists, body included), and pull the real billed price via `get_execution_price`.
+- The app is built, packaged and launched at least once; every automatable path is exercised by us first. The human's job at the final stage is to CLICK THROUGH a working product, not to debug it.
+- Regressions found during self-test get fixed and re-tested before handoff - never shipped with a "known issue" note unless the human explicitly accepts it.
+
+## 5. Repo mechanics
+
+- Hub (`build-with-flymyai`) = index + submodules; each demo = its own repo (clone one without pulling all).
 - Per-demo layout: `README.md` (marketing + quick start), `CLAUDE.md` (for people adapting via Claude), `agent/`, `app/` or `client/`, `BUILD_LOG.md`, MIT `LICENSE`, `NOTICE.md` when forking.
 - English-only in code and docs. Dash `-`, never em-dash. Secret-scan before every push.
 - Releases carry the installable artifact (.dmg etc.); ad-hoc signed demo builds say so in the README.
