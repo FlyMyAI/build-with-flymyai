@@ -2,11 +2,11 @@
 
 **We kill $15/mo subscriptions.** Each demo here is a real app built from **one prompt** - Claude as the builder, **[FlyMy.AI](https://flymy.ai) agentic cloud** as the backend - with the receipts published: code, agent recipe, and a BUILD_LOG with our real bill.
 
-**First kill: [Wispr Flow](https://github.com/FlyMyAI/whisperfly)** - their price: **$12-15/mo forever**. Ours: **dictation $0** (local, offline) + **$0.083 per voice note filed to Notion** (a feature they don't have). 3-18x cheaper, core feature free.
+**First kill: [Wispr Flow](https://github.com/FlyMyAI/whisperfly)** - their price: **$12-15/mo forever**. Ours: **dictation $0** (local, offline) + **$0.031 per voice note filed to Notion** (a feature they don't have). 3-18x cheaper, core feature free.
 
 | Demo | Kills | Their price | Our price |
 |---|---|---|---|
-| [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Wispr Flow (hotkey dictation) | $12-15/mo | $0 dictation + $0.083/note to Notion |
+| [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Wispr Flow (hotkey dictation) | $12-15/mo | $0.031/note all-in (STT+cleanup+tags+Notion) |
 
 ## Build your own, from one prompt
 
