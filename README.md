@@ -2,11 +2,31 @@
 
 **We kill $15/mo subscriptions.** Each demo here is a real app built from **one prompt** - Claude as the builder, **[FlyMy.AI](https://flymy.ai) agentic cloud** as the backend - with the receipts published: code, agent recipe, and a BUILD_LOG with our real bill.
 
-**First kill: [Wispr Flow](https://github.com/FlyMyAI/whisperfly)** - their price: **$12-15/mo forever**. Ours: **dictation $0** (local, offline) + **$0.031 per voice note filed to Notion** (a feature they don't have). 3-18x cheaper, core feature free.
+```mermaid
+flowchart LR
+    U(["🧑‍💻 you<br/><b>one prompt</b>"]) --> C
+    subgraph BRAIN["🧠 Claude + FlyMy.AI MCP"]
+        C["your coding agent"]
+    end
+    C -->|one line, one MCP| CLOUD
+    subgraph CLOUD["☁️ FlyMy.AI agentic cloud"]
+        direction TB
+        M["🎨 models · 🤖 agents · 🔌 100+ tools"]
+        A["agents that provision,<br/>run &amp; watch it 24/7"]
+    end
+    CLOUD --> OUT(["📦 a real product<br/>on <b>your</b> accounts, billed to you"])
+
+    classDef you fill:#0b7285,stroke:#0b7285,color:#fff;
+    classDef brain fill:#5f3dc4,stroke:#5f3dc4,color:#fff;
+    classDef cloud fill:#1864ab,stroke:#1864ab,color:#fff;
+    classDef out fill:#2b8a3e,stroke:#2b8a3e,color:#fff;
+    class U you; class C brain; class M,A cloud; class OUT out;
+```
 
 | Demo | Kills | Their price | Our price |
 |---|---|---|---|
 | [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Wispr Flow (hotkey dictation) | $12-15/mo | $0.031/note all-in (STT+cleanup+tags+Notion) |
+| [replifly](https://github.com/FlyMyAI/replifly) 🚀 | Replit (deploy-to-prod) | $25/mo + fees | pay-per-use on your own Fly.io/Neon/Sentry |
 
 ## Build your own, from one prompt
 
