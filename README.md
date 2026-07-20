@@ -5,12 +5,6 @@
   We rebuild expensive subscription workflows into transparent, flat-rate systems you own.
 </p>
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/github/license/FlyMyAI/build-with-flymyai?style=flat-square&color=0A66FF" />
-  <img alt="Platform" src="https://img.shields.io/badge/Platform-macOS_|_Linux-111111?style=flat-square" />
-  <img alt="MCP" src="https://img.shields.io/badge/MCP-connectable-16A34A?style=flat-square" />
-</p>
-
 ---
 
 ## ⚡ Quick Matrix
