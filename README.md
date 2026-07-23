@@ -23,11 +23,13 @@ flowchart LR
     class U you; class C brain; class M,A cloud; class OUT out;
 ```
 
-| Demo | Kills | Startup valued at | Built on FlyMy.AI + agent-infra for | Built with Claude for | Runs on FlyMy.AI for | Their subscription | Price difference |
-|---|---|---|---|---|---|---|---|
-| [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Wispr Flow (hotkey dictation) | **$700M** (~$315M raised) | ~$20/mo agent-infra + FlyMy.AI usage | $200/mo Claude Max | dictation **$0** + $0.031/note to Notion | $12-15/mo | core feature **free**, ~5-16x cheaper |
-| [replifly](https://github.com/FlyMyAI/replifly) 🚀 | Replit (deploy-to-prod) | **$9B** ($400M round) | ~$20/mo agent-infra + FlyMy.AI usage | $200/mo Claude Max | ~$2-5/mo (your Fly+Neon+Sentry) | $25-45/mo + metered Agent | **~4-10x** cheaper to run |
-| [higfly](https://github.com/FlyMyAI/higfly) 🎬 | Higgsfield (cinematic AI video) | **$1.3B** (~$138M raised, eyeing $5B) | ~$20/mo agent-infra + FlyMy.AI usage | $200/mo Claude Max | **~$0.20-0.50/clip** | $9-49/mo credits | pay-per-clip, **no subscription** |
+The scoreboard - one cheap kit vs a venture-funded startup:
+
+| Demo | Kills | They're worth | Built on FlyMy.AI | You run it for | Their subscription | The kill |
+|---|---|---|---|---|---|---|
+| [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Wispr Flow · dictation | **$700M** | ~$20/mo agent-infra + FlyMy usage (+$200 Claude Max) | **$0** + $0.03/note | $12-15/mo | dictation is **free** |
+| [replifly](https://github.com/FlyMyAI/replifly) 🚀 | Replit · deploy-to-prod | **$9B** | ~$20/mo agent-infra + FlyMy usage (+$200 Claude Max) | **~$3/mo** | $25-45/mo | **~10x** cheaper |
+| [higfly](https://github.com/FlyMyAI/higfly) 🎬 | Higgsfield · AI video | **$1.3B** | ~$20/mo agent-infra + FlyMy usage (+$200 Claude Max) | **~$0.30/clip** | $9-49/mo | **no subscription** |
 
 ## Build your own, from one prompt
 
