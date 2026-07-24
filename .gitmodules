@@ -4,3 +4,6 @@
 [submodule "replifly"]
 	path = replifly
 	url = git@github.com:FlyMyAI/replifly.git
+[submodule "higfly"]
+	path = higfly
+	url = git@github.com:FlyMyAI/higfly.git
