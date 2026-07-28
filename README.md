@@ -30,6 +30,13 @@ The scoreboard - one cheap kit vs a venture-funded startup:
 | [WhisperFly](https://github.com/FlyMyAI/whisperfly) 🎙️ | Wispr Flow · dictation | **$700M** | ~$20/mo agent-infra + FlyMy usage (+$200 Claude Max) | **$0** + $0.03/note | $12-15/mo | dictation is **free** |
 | [replifly](https://github.com/FlyMyAI/replifly) 🚀 | Replit · deploy-to-prod | **$9B** | ~$20/mo agent-infra + FlyMy usage (+$200 Claude Max) | **~$3/mo** | $25-45/mo | **~10x** cheaper |
 | [higfly](https://github.com/FlyMyAI/higfly) 🎬 | Higgsfield · AI video | **$1.3B** | ~$20/mo agent-infra + FlyMy usage (+$200 Claude Max) | **~$0.30/clip** | $9-49/mo | **no subscription** |
+| **more coming soon** 🎯 | your suggestion | | | | | **we are coming for the rest** |
+
+## More coming soon
+
+Three down. Anything whose core feature is really a chain of model calls is on the table: image and video studios, transcription and meeting tools, "AI wrapper" SaaS, deploy and hosting platforms, scraping and research services. Each one is the same recipe - one prompt, one frozen agent, a published bill.
+
+**We are coming for the rest.** Watch this repo, or open an issue naming the product you want rebuilt next: if one prompt plus one frozen agent can do its job, it goes on the list.
 
 ## Build your own, from one prompt
 
